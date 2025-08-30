@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <!-- Cabeçalho. Feito para todas as págians -->
+    <header>
+        <div>
+            <a class="links" href="./sobre.html">Sobre mim</a>
+            <a class="links" href="./formacao.html">Formação</a>
+            <a class="links" href="./projetos.html">Projetos pessoais</a>
+            <a class="links" href="">Contato</a>
+        </div>
+    </header>
+
+    <!-- Páigna para contato -->
+    <div class="content">
+        <div id="formulario">
+            <h1> Insita abaixo suas informações para contato: </h1>
+            <br>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" placeholder="Seu nome completo">
+                    <div id="nomeError" class="error">Por favor, informe seu nome.</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="seu@email.com">
+                    <div id="emailError" class="error">Por favor, informe um e-mail válido.</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" placeholder="(11) 99999-9999">
+                    <div id="telefoneError" class="error">Por favor, informe um telefone válido.</div>
+                </div>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        
+        <div id="mensagemSucesso" class="success-message">
+            <div class="success-icon">✓</div>
+            <h2>Formulário Enviado com Sucesso!</h2>
+            <h3>Em breve entraremos em contato.</h3>
+            <button class="back-button" onclick="mostrarFormulario()">Voltar</button>
+        </div>
+    </div>
+
+    <!-- Importa o arquivo de script para alternar entre o formulário e a mensagem de sucesso -->
+    <script src="../scripts/main.js"></script>
+
+    <footer>
+        © Todos os direitos reservados - MARCOS FELIPE CONRADO
+    </footer>
+</body>
+</html>
